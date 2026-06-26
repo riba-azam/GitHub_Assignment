@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allah 99 Names | Reflections & Meanings</title>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #064e3b;
+            --secondary-color: #b45309;
+            --bg-color: #f4f1ea;
+            --card-bg: #ffffff;
+            --text-dark: #1f2937;
+            --text-light: #4b5563;
+            --border-color: rgba(0,0,0,0.04);
+            --hero-gradient: linear-gradient(rgba(0, 0, 0, 0.3), rgba(6, 78, 59, 0.75));
+        }
+
+        /* Dark Theme Settings */
+        [data-theme="dark"] {
+            --primary-color: #10b981;
+            --secondary-color: #f59e0b;
+            --bg-color: #111827;
+            --card-bg: #1f2937;
+            --text-dark: #f9fafb;
+            --text-light: #9ca3af;
+            --border-color: rgba(255,255,255,0.08);
+            --hero-gradient: linear-gradient(rgba(0, 0, 0, 0.5), rgba(17, 24, 39, 0.85));
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-image: radial-gradient(rgba(0,0,0,0.02) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+
+        /* Navbar */
+        header {
+            background-color: var(--card-bg);
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            cursor: pointer;
+        }
+
+        nav .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        nav .nav-links a {
+            text-decoration: none;
+            color: var(--text-light);
+            font-weight: 500;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+
+        nav .nav-links a:hover, nav .nav-links a.active {
+            color: var(--primary-color);
+        }
+
+        .settings-btn {
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            color: var(--text-light);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .settings-btn:hover {
+            color: var(--primary-color);
+            transform: rotate(45deg);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 2rem auto 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Fixed Kaaba Hero Section */
+        .kaaba-hero {
+            width: 100%;
+            height: 380px;
+            position: relative;
+            background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20241127/pngtree-holy-hajj-and-umrah-pilgrimage-at-kaaba-in-mecca-for-eid-image_16673644.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 2rem;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+
+        .kaaba-hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: var(--hero-gradient);
+            z-index: 1;
+        }
+
+        .kaaba-hero h1, .kaaba-hero p {
+            position: relative;
+            z-index: 2;
+        }
+
+        .kaaba-hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            margin-bottom: 0.8rem;
+            text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+        }
+
+        .kaaba-hero p {
+            font-size: 1.35rem;
+            max-width: 700px;
+            opacity: 0.95;
+            text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+        }
+
+        /* Search Bar Section */
+        .search-container {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto 3rem auto;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+            border-radius: 30px;
+        }
+
+        .search-container i {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 1rem 1.5rem 1rem 3.5rem;
+            border-radius: 30px;
+            border: 2px solid transparent;
+            background-color: var(--card-bg);
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-input:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 4px 20px rgba(6, 78, 59, 0.1);
+        }
+
+        /* Home View Container */
+        #home-view {
+            display: block;
+        }
+
+        .names-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .name-card {
+            background-color: var(--card-bg);
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            border: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .name-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 25px rgba(6, 78, 59, 0.12);
+        }
+
+        .card-img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            filter: brightness(0.9);
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .card-body {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .card-id {
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+            font-weight: 700;
+            margin-bottom: 0.2rem;
+        }
+
+        .card-arabic {
+            font-size: 2.4rem;
+            color: var(--primary-color);
+            margin: 0.2rem 0;
+            font-family: 'Traditional Arabic', Georgia, serif;
+            font-weight: bold;
+        }
+
+        .card-translit {
+            font-size: 1.25rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .card-meaning {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            margin-top: 0.4rem;
+            font-weight: 500;
+        }
+
+        /* Detail View Layout */
+        #detail-view {
+            display: none;
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        /* Tasbeeh Counter Section */
+        #tasbeeh-view {
+            display: none;
+            max-width: 500px;
+            margin: 2rem auto;
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border: 1px solid var(--border-color);
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        .tasbeeh-display {
+            font-size: 4rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            background: var(--bg-color);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin: 1.5rem 0;
+            font-family: monospace;
+            letter-spacing: 2px;
+            box-shadow: inset 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .tasbeeh-btns {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .btn-circle {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: none;
+            background: var(--primary-color);
+            color: white;
+            font-size: 1.8rem;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(6, 78, 59, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.1s, background-color 0.3s;
+        }
+        .btn-circle:active {
+            transform: scale(0.92);
+        }
+        .btn-reset {
+            background: #ef4444;
+            box-shadow: 0 4px 12px rgba(239, 68, 68, 0.2);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(12px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .detail-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2.5rem;
+        }
+
+        /* Main Hero Banner for Individual Name */
+        .main-banner {
+            border-radius: 16px;
+            padding: 4.5rem 2.5rem;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(4, 57, 39, 0.2);
+            margin-bottom: 2rem;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .main-banner::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: linear-gradient(135deg, rgba(4, 57, 39, 0.94) 0%, rgba(12, 102, 76, 0.88) 100%);
+            z-index: 1;
+        }
+
+        .banner-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .banner-arabic {
+            font-size: 5rem;
+            text-align: right;
+            font-family: 'Traditional Arabic', Georgia, serif;
+            opacity: 0.95;
+            margin-bottom: 1rem;
+            text-shadow: 0 3px 6px rgba(0,0,0,0.4);
+        }
+
+        .banner-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .banner-meanings {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            font-style: italic;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+
+        /* Action Buttons Row */
+        .action-row {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.8rem 1.6rem;
+            border-radius: 30px;
+            border: none;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.25s;
+            font-size: 0.95rem;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover { opacity: 0.9; }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 2px solid var(--secondary-color);
+            color: var(--secondary-color);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        .btn-check {
+            background-color: var(--bg-color);
+            color: var(--text-dark);
+            border: 1px solid var(--border-color);
+        }
+        .btn-check.active {
+            background-color: #d1fae5;
+            color: #065f46;
+            border: 1px solid #10b981;
+        }
+
+        /* Info Content Cards */
+        .info-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .info-card-title {
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            color: var(--secondary-color);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .info-card p {
+            font-size: 1.15rem;
+            color: var(--text-dark);
+            font-style: italic;
+        }
+
+        .info-card .author {
+            display: block;
+            margin-top: 0.8rem;
+            font-size: 0.9rem;
+            color: var(--text-light);
+            font-style: normal;
+        }
+
+        /* Daily Reflection Box */
+        .reflection-box {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 2.5rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            margin-bottom: 2rem;
+        }
+
+        .reflection-box h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .reflection-quote {
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        /* Sidebar Elements */
+        .sidebar-section {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            border: 1px solid var(--border-color);
+        }
+
+        .sidebar-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-light);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        /* Nav Cards (Prev/Next) */
+        .nav-card {
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 1.2rem;
+            margin-bottom: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .nav-card:hover {
+            border-color: var(--primary-color);
+        }
+
+        .nav-card-info h4 {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+        }
+
+        .nav-card-info p {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        /* Progress Bar */
+        .progress-container {
+            margin-top: 0.5rem;
+        }
+        .progress-bar-bg {
+            background-color: var(--bg-color);
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 0.5rem;
+        }
+        .progress-bar-fill {
+            background-color: var(--primary-color);
+            height: 100%;
+            width: 1%;
+            transition: width 0.5s ease;
+        }
+        .progress-text {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-light);
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--card-bg);
+            padding: 3rem 5%;
+            text-align: center;
+            margin-top: 5rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .footer-logo {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .detail-layout {
+                grid-template-columns: 1fr;
+            }
+            header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .kaaba-hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo" id="nav-logo">Asma al-Husna</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a id="link-all" class="active">All Names</a></li>
+                <li><a id="link-daily">Daily Name</a></li>
+                <li><a id="link-tasbeeh"><i class="fa-solid fa-calculator"></i> Tasbeeh Counter</a></li>
+                <li><button class="settings-btn" id="theme-toggle-btn" title="Toggle Light/Dark Theme"><i class="fa-solid fa-moon"></i></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HOME VIEW -->
+        <section id="home-view">
+            <div class="kaaba-hero">
+                <h1>Allah 99 Names</h1>
+                <p>Explore the ultimate beauty, Quranic context, and Urdu/English reflections of the Beautiful Names of Allah Almighty.</p>
+            </div>
+
+            <!-- Search Bar Section Inside Home View -->
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="search-bar" class="search-input" placeholder="Search by English, Arabic, or Urdu name...">
+            </div>
+
+            <div class="names-grid" id="names-grid-container">
+                <!-- Javascript dynamically injects cards here -->
+            </div>
+        </section>
+
+        <!-- TASBEEH COUNTER VIEW -->
+        <section id="tasbeeh-view">
+            <h2 style="color: var(--primary-color);">Digital Tasbeeh Counter</h2>
+            <p style="color: var(--text-light); margin-bottom: 1rem;">Recite any Name of Allah and track your count easily.</p>
+            <div class="tasbeeh-display" id="counter-display">000</div>
+            <div class="tasbeeh-btns">
+                <button class="btn-circle btn-reset" id="btn-counter-reset" title="Reset"><i class="fa-solid fa-rotate-left"></i></button>
+                <button class="btn-circle" id="btn-counter-count" title="Count"><i class="fa-solid fa-plus"></i></button>
+            </div>
+        </section>
+
+        <!-- DETAIL VIEW -->
+        <section id="detail-view">
+            <div class="detail-layout">
+                
+                <!-- Left Column -->
+                <div class="left-content">
+                    <div class="main-banner" id="main-banner-bg">
+                        <div class="banner-content">
+                            <div class="banner-arabic" id="det-arabic">الملک</div>
+                            <h2 class="banner-title" id="det-translit">Al-Malik</h2>
+                            <p class="banner-meanings" id="det-meanings">The Sovereign Lord / بادشاہ</p>
+                        </div>
+                    </div>
+
+                    <div class="action-row">
+                        <button class="btn btn-primary" id="btn-audio">
+                            <i class="fa-solid fa-volume-high"></i> Listen to Pronunciation
+                        </button>
+                        <button class="btn btn-secondary" id="btn-share">
+                            <i class="fa-solid fa-share-nodes"></i> Share Reflection
+                        </button>
+                        <button class="btn btn-check" id="btn-memorize">
+                            <i class="fa-solid fa-circle-check"></i> <span>Mark as Memorized</span>
+                        </button>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-title">Quranic Reference</div>
+                        <p id="det-quran">"He is Allah, other than whom there is no deity..."</p>
+                        <span class="author" id="det-quran-verse">Surah Al-Hashr, 59:23</span>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-card-title">Prophetic Tradition</div>
+                        <p id="det-hadith">"Allah will fold the heavens on the Day of Resurrection..."</p>
+                        <span class="author" id="det-hadith-source">Sahih Bukhari</span>
+                    </div>
+
+                    <div class="reflection-box">
+                        <h2>Daily Reflection</h2>
+                        <div class="reflection-quote" id="det-ref-quote">"True power belongs to Al-Malik alone."</div>
+                        <p id="det-ref-desc">When we realize that every breath belongs to the King of Kings, our hearts find peace.</p>
+                    </div>
+                </div>
+
+                <!-- Right Column (Sidebar) -->
+                <div class="sidebar">
+                    <div class="sidebar-section">
+                        <div class="sidebar-title">Previous & Next Names</div>
+                        
+                        <div class="nav-card" id="prev-card">
+                            <div class="nav-card-info">
+                                <p id="prev-id">003</p>
+                                <h4 id="prev-name">Ar-Raheem</h4>
+                                <p id="prev-mean">The Bestower of Mercy</p>
+                            </div>
+                            <i class="fa-solid fa-chevron-left" style="color: var(--text-light)"></i>
+                        </div>
+
+                        <div class="nav-card" id="next-card">
+                            <div class="nav-card-info">
+                                <p id="next-id">005</p>
+                                <h4 id="next-name">Al-Quddus</h4>
+                                <p id="next-mean">The Pure One</p>
+                            </div>
+                            <i class="fa-solid fa-chevron-right" style="color: var(--text-light)"></i>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <div class="sidebar-title">Your Journey</div>
+                        <div class="progress-container">
+                            <div class="progress-bar-bg">
+                                <div class="progress-bar-fill" id="progress-fill"></div>
+                            </div>
+                            <div class="progress-text" id="progress-txt">0 / 99 Names Memorized</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">Allah 99 Names Reflection Portal</div>
+        <p>© 2026 | Designed by Riba Azam</p>
+    </footer>
+
+    <script>
+        // Full list of 99 Names of Allah
+        const asmaAlHusna = [
+            { id: "001", arabic: "الرحمن", transliteration: "Ar-Rahman", meaningEnglish: "The Most Gracious", meaningUrdu: "سب سے زیادہ رحم کرنے والا",  quran: "The Most Gracious taught the Quran.", verse: "Surah Ar-Rahman, 55:1-2", hadith: "The Merciful One shows mercy to the merciful.", source: "Tirmidhi", quote: "His mercy precedes His wrath.", desc: "Every blessing you experience is a manifestation of Ar-Rahman." }, 
+            { id: "002", arabic: "الرحيم", transliteration: "Ar-Raheem", meaningEnglish: "The Bestower of Mercy", meaningUrdu: "نہایت مہربان", quran: "And He is ever, to the believers, Merciful.", verse: "Surah Al-Ahzab, 33:43", hadith: "Allah has divided mercy into one hundred parts.", source: "Sahih Muslim", quote: "A specific mercy tailored for your trials.", desc: "Ar-Raheem is the intimate protective mercy reserved for believers." },
+            { id: "003", arabic: "الملک", transliteration: "Al-Malik", meaningEnglish: "The Sovereign Lord", meaningUrdu: "حقیقی بادشاہ", quran: "The Sovereign, the Pure, the Perfection...", verse: "Surah Al-Hashr, 59:23", hadith: "I am the King! Where are the kings of the earth?", source: "Sahih Bukhari", quote: "True power belongs to Al-Malik alone.", desc: "When we realize that every breath belongs to the King of Kings, our hearts find peace." },
+            { id: "004", arabic: "القدوس", transliteration: "Al-Quddus", meaningEnglish: "The Pure One", meaningUrdu: "ہر عیب سے پاک", quran: "Whatever is in the heavens exalts Allah, the Pure...", verse: "Surah Al-Jumu'ah, 62:1", hadith: "Subbuhun Quddusun, Rabbul-mala'ikati war-ruh.", source: "Sahih Muslim", quote: "He is free from any imperfection.", desc: "Al-Quddus reminds us to purify our intentions and thoughts." },
+            { id: "005", arabic: "السلام", transliteration: "As-Salam", meaningEnglish: "The Source of Peace", meaningUrdu: "سلامتی دینے والا",  quran: "The Sovereign, the Pure, the Peace...", verse: "Surah Al-Hashr, 59:23", hadith: "O Allah, You are Peace and from You comes peace.", source: "Sahih Muslim", quote: "True tranquility comes from Him.", desc: "Connect with As-Salam to relieve anxiety." },
+            { id: "006", arabic: "المؤمن", transliteration: "Al-Mu'min", meaningEnglish: "The Remover of Fear", meaningUrdu: "امن و امان دینے والا", quran: "The Giver of Belief, the Overseer...", verse: "Surah Al-Hashr, 59:23", hadith: "The believer is one from whom people are safe.", source: "Tirmidhi", quote: "He secures His servants from injustice.", desc: "Al-Mu'min grants peace of heart and security in faith." },
+            { id: "007", arabic: "المهيمن", transliteration: "Al-Muhaymin", meaningEnglish: "The Guardian", meaningUrdu: "نگہبان", quran: "The Guardian, the Exalted in Might...", verse: "Surah Al-Hashr, 59:23", hadith: "Allah protects your good deeds perfectly.", source: "Islamic Tradition", quote: "Nothing escapes His supreme gaze.", desc: "He watches over and protects all His creation." },
+            { id: "008", arabic: "العزيز", transliteration: "Al-Aziz", meaningEnglish: "The Almighty", meaningUrdu: "سب پر غالب",  quran: "And He is the Exalted in Might, the Wise.", verse: "Surah Al-Baqarah, 2:129", hadith: "Honor belongs entirely to Allah Almighty.", source: "Sahih Bukhari", quote: "Unconquerable power rests with Him.", desc: "Al-Aziz cannot be overcome or resisted by any worldly power." },
+            { id: "009", arabic: "الجبار", transliteration: "Al-Jabbar", meaningEnglish: "The Restorer", meaningUrdu: "زبردست، بگڑی بنانے والا",  quran: "The Compeller, the Superior...", verse: "Surah Al-Hashr, 59:23", hadith: "He heals the broken hearts of his believers.", source: "Hadith", quote: "He mends what is shattered in your life.", desc: "Al-Jabbar fixes all broken situations with absolute control." },
+            { id: "010", arabic: "المتکبر", transliteration: "Al-Mutakabbir", meaningEnglish: "The Supreme", meaningUrdu: "بزرگی والا",  quran: "The Supreme, Exalted is Allah...", verse: "Surah Al-Hashr, 59:23", hadith: "Pride is My cloak and greatness My garment.", source: "Hadith Qudsi", quote: "True majesty belongs solely to Him.", desc: "He reveals His greatness in all aspects of creation." },
+            { id: "011", arabic: "الخالق", transliteration: "Al-Khaliq", meaningEnglish: "The Creator", meaningUrdu: "پیدا کرنے والا" },
+            { id: "012", arabic: "البارئ", transliteration: "Al-Bari", meaningEnglish: "The Evolver", meaningUrdu: "ٹھیک بنانے والا" },
+            { id: "013", arabic: "المصور", transliteration: "Al-Musawwir", meaningEnglish: "The Fashioner", meaningUrdu: "صورت گری کرنے والا" },
+            { id: "014", arabic: "الغفار", transliteration: "Al-Ghaffar", meaningEnglish: "The Constant Forgiver", meaningUrdu: "بہت بخشنے والا" },
+            { id: "015", arabic: "القهار", transliteration: "Al-Qahhar", meaningEnglish: "The All-Subduer", meaningUrdu: "سب پر غالب" },
+            { id: "016", arabic: "الوهاب", transliteration: "Al-Wahhab", meaningEnglish: "The Supreme Bestower", meaningUrdu: "سب کچھ عطا کرنے والا" },
+            { id: "017", arabic: "الرزاق", transliteration: "Al-Razzaq", meaningEnglish: "The Provider", meaningUrdu: "رزق دینے والا" },
+            { id: "018", arabic: "الفتاح", transliteration: "Al-Fattah", meaningEnglish: "The Opener", meaningUrdu: "مشکل کشا" },
+            { id: "019", arabic: "العليم", transliteration: "Al-Alim", meaningEnglish: "The All-Knowing", meaningUrdu: "سب کچھ جاننے والا" },
+            { id: "020", arabic: "القابض", transliteration: "Al-Qabid", meaningEnglish: "The Withholder", meaningUrdu: "تنگ کرنے والا" },
+            { id: "021", arabic: "الباسط", transliteration: "Al-Basit", meaningEnglish: "The Extender", meaningUrdu: "کشادہ کرنے والا" },
+            { id: "022", arabic: "الخافض", transliteration: "Al-Khafid", meaningEnglish: "The Reducer", meaningUrdu: "پست کرنے والا" },
+            { id: "023", arabic: "الرافع", transliteration: "Al-Rafi", meaningEnglish: "The Exalter", meaningUrdu: "بلند کرنے والا" },
+            { id: "024", arabic: "المعز", transliteration: "Al-Mu'izz", meaningEnglish: "The Giver of Honor", meaningUrdu: "عزت دینے والا" },
+            { id: "025", arabic: "المذل", transliteration: "Al-Mudhill", meaningEnglish: "The Giver of Dishonor", meaningUrdu: "ذلت دینے والا" },
+            { id: "026", arabic: "السميع", transliteration: "As-Sami", meaningEnglish: "The All-Hearing", meaningUrdu: "سب کچھ سننے والا" },
+            { id: "027", arabic: "البصير", transliteration: "Al-Basir", meaningEnglish: "The All-Seeing", meaningUrdu: "سب کچھ دیکھنے والا" },
+            { id: "028", arabic: "الحكم", transliteration: "Al-Hakam", meaningEnglish: "The Judge", meaningUrdu: "فیصلہ کرنے والا" },
+            { id: "029", arabic: "العدل", transliteration: "Al-Adl", meaningEnglish: "The Utterly Just", meaningUrdu: "عدل کرنے والا" },
+            { id: "030", arabic: "اللطيف", transliteration: "Al-Latif", meaningEnglish: "The Subtle One", meaningUrdu: "مہربان" },
+            { id: "031", arabic: "الخبير", transliteration: "Al-Khabir", meaningEnglish: "The All-Aware", meaningUrdu: "خبردار" },
+            { id: "032", arabic: "الحليم", transliteration: "Al-Halim", meaningEnglish: "The Forbearing", meaningUrdu: "بردبار" },
+            { id: "033", arabic: "العظيم", transliteration: "Al-Azim", meaningEnglish: "The Magnificent", meaningUrdu: "عظمت والا" },
+            { id: "034", arabic: "الغفور", transliteration: "Al-Ghafur", meaningEnglish: "The All-Forgiving", meaningUrdu: "معاف کرنے والا" },
+            { id: "035", arabic: "الشكور", transliteration: "Ash-Shakur", meaningEnglish: "The Most Appreciative", meaningUrdu: "قدردان" },
+            { id: "036", arabic: "العلي", transliteration: "Al-Ali", meaningEnglish: "The Highest", meaningUrdu: "بلند مرتبہ" },
+            { id: "037", arabic: "الكبير", transliteration: "Al-Kabir", meaningEnglish: "The Greatest", meaningUrdu: "بہت بڑا" },
+            { id: "038", arabic: "الحفيظ", transliteration: "Al-Hafiz", meaningEnglish: "The Preserver", meaningUrdu: "حفاظت کرنے والا" },
+            { id: "039", arabic: "المقيت", transliteration: "Al-Muqit", meaningEnglish: "The Sustainer", meaningUrdu: "روزی پہنچانے والا" },
+            { id: "040", arabic: "الحسيب", transliteration: "Al-Hasib", meaningEnglish: "The Accountant", meaningUrdu: "کفایت کرنے والا" },
+            { id: "041", arabic: "الجليل", transliteration: "Al-Jalil", meaningEnglish: "The Majestic", meaningUrdu: "بزرگی والا" },
+            { id: "042", arabic: "الكريم", transliteration: "Al-Karim", meaningEnglish: "The Most Generous", meaningUrdu: "کرم کرنے والا" },
+            { id: "043", arabic: "الرقيب", transliteration: "Ar-Raqib", meaningEnglish: "The Watchful", meaningUrdu: "نگہبان" },
+            { id: "044", arabic: "المجيب", transliteration: "Al-Mujib", meaningEnglish: "The Responsive One", meaningUrdu: "قبول کرنے والا" },
+            { id: "045", arabic: "الواسع", transliteration: "Al-Wasi", meaningEnglish: "The All-Encompassing", meaningUrdu: "کشادگی والا" },
+            { id: "046", arabic: "الحكيم", transliteration: "Al-Hakim", meaningEnglish: "The All-Wise", meaningUrdu: "حکمت والا" },
+            { id: "047", arabic: "الودود", transliteration: "Al-Wadud", meaningEnglish: "The Most Loving", meaningUrdu: "محبت کرنے والا" },
+            { id: "048", arabic: "المجيد", transliteration: "Al-Majid", meaningEnglish: "The Glorious", meaningUrdu: "بزرگی والا" },
+            { id: "049", arabic: "الباعث", transliteration: "Al-Ba'ith", meaningEnglish: "The Resurrector", meaningUrdu: "اٹھانے والا" },
+            { id: "050", arabic: "الشهيد", transliteration: "Ash-Shahid", meaningEnglish: "The Witness", meaningUrdu: "حاضر" },
+            { id: "051", arabic: "الحق", transliteration: "Al-Haqq", meaningEnglish: "The Absolute Truth", meaningUrdu: "سچ" },
+            { id: "052", arabic: "الوكيل", transliteration: "Al-Wakil", meaningEnglish: "The Trustee", meaningUrdu: "کارساز" },
+            { id: "053", arabic: "القوي", transliteration: "Al-Qawiyy", meaningEnglish: "The All-Strong", meaningUrdu: "توانا" },
+            { id: "054", arabic: "المتين", transliteration: "Al-Matin", meaningEnglish: "The Firm One", meaningUrdu: "مضبوط" },
+            { id: "055", arabic: "الولي", transliteration: "Al-Waliyy", meaningEnglish: "The Protecting Associate", meaningUrdu: "سرپرست" },
+            { id: "056", arabic: "الحميد", transliteration: "Al-Hamid", meaningEnglish: "The Praiseworthy", meaningUrdu: "تعریف والا" },
+            { id: "057", arabic: "المحصي", transliteration: "Al-Muhsi", meaningEnglish: "The All-Enumerating One", meaningUrdu: "شمار کرنے والا" },
+            { id: "058", arabic: "المبدئ", transliteration: "Al-Mubdi", meaningEnglish: "The Originator", meaningUrdu: "پہلی بار پیدا کرنے والا" },
+            { id: "059", arabic: "المعيد", transliteration: "Al-Mu'id", meaningEnglish: "The Restorer", meaningUrdu: "دوبارہ پیدا کرنے والا" },
+            { id: "060", arabic: "المحيي", transliteration: "Al-Muhyi", meaningEnglish: "The Giver of Life", meaningUrdu: "زندہ کرنے والا" },
+            { id: "061", arabic: "المميت", transliteration: "Al-Mumit", meaningEnglish: "The Bringer of Death", meaningUrdu: "مارنے والا" },
+            { id: "062", arabic: "الحي", transliteration: "Al-Hayy", meaningEnglish: "The Ever-Living", meaningUrdu: "زندہ جاوید" },
+            { id: "063", arabic: "القيوم", transliteration: "Al-Qayyum", meaningEnglish: "The Sustainer of All", meaningUrdu: "سب کو سنبھالنے والا" },
+            { id: "064", arabic: "الواجد", transliteration: "Al-Wajid", meaningEnglish: "The Perceiver", meaningUrdu: "پانے والا" },
+            { id: "065", arabic: "الماجد", transliteration: "Al-Majid", meaningEnglish: "The Illustrious", meaningUrdu: "بزرگی والا" },
+            { id: "066", arabic: "الواحد", transliteration: "Al-Wahid", meaningEnglish: "The One", meaningUrdu: "ایک" },
+            { id: "067", arabic: "الاحد", transliteration: "Al-Ahad", meaningEnglish: "The Unique", meaningUrdu: "اکیلا" },
+            { id: "068", arabic: "الصمد", transliteration: "As-Samad", meaningEnglish: "The Eternal Refuge", meaningUrdu: "بے نیاز" },
+            { id: "069", arabic: "القادر", transliteration: "Al-Qadir", meaningEnglish: "The Capable", meaningUrdu: "قدرت والا" },
+            { id: "070", arabic: "المقتدر", transliteration: "Al-Muqtadir", meaningEnglish: "The Omnipotent", meaningUrdu: "حقوق والا" },
+            { id: "071", arabic: "المقدم", transliteration: "Al-Muqaddim", meaningEnglish: "The Expediter", meaningUrdu: "آگے کرنے والا" },
+            { id: "072", arabic: "المؤخر", transliteration: "Al-Mu'akhkhir", meaningEnglish: "The Delayer", meaningUrdu: "پیچھے کرنے والا" },
+            { id: "073", arabic: "الأول", transliteration: "Al-Awwal", meaningEnglish: "The First", meaningUrdu: "پہلا" },
+            { id: "074", arabic: "الأخر", transliteration: "Al-Akhir", meaningEnglish: "The Last", meaningUrdu: "آخری" },
+            { id: "075", arabic: "الظاهر", transliteration: "Az-Zahir", meaningEnglish: "The Manifest", meaningUrdu: "ظاہر" },
+            { id: "076", arabic: "الباطن", transliteration: "Al-Batin", meaningEnglish: "The Hidden One", meaningUrdu: "چھپا ہوا" },
+            { id: "077", arabic: "الوالي", transliteration: "Al-Wali", meaningEnglish: "The Governor", meaningUrdu: "مالک" },
+            { id: "078", arabic: "المتعالي", transliteration: "Al-Muta'ali", meaningEnglish: "The Self Exalted", meaningUrdu: "بلند صفت والا" },
+            { id: "079", arabic: "البر", transliteration: "Al-Barr", meaningEnglish: "The Source of Goodness", meaningUrdu: "حسن سلوک کرنے والا" },
+            { id: "080", arabic: "التواب", transliteration: "At-Tawwab", meaningEnglish: "The Ever-Pardoning", meaningUrdu: "توبہ قبول کرنے والا" },
+            { id: "081", arabic: "المنتقم", transliteration: "Al-Muntaqim", meaningEnglish: "The Avenger", meaningUrdu: "بدلہ لینے والا" },
+            { id: "082", arabic: "العفو", transliteration: "Al-Afuww", meaningEnglish: "The Pardoner", meaningUrdu: "معاف کرنے والا" },
+            { id: "083", arabic: "الرؤوف", transliteration: "Ar-Ra'uf", meaningEnglish: "The Most Kind", meaningUrdu: "شفقت کرنے والا" },
+            { id: "084", arabic: "مالک الملک", transliteration: "Malik-ul-Mulk", meaningEnglish: "Master of Sovereignty", meaningUrdu: "کائنات کا مالک" },
+            { id: "085", arabic: "ذو الجلال و الإکرام", transliteration: "Dhu-l-Jalali wa-l-Ikram", meaningEnglish: "Lord of Majesty and Bounty", meaningUrdu: "عظمت اور انعام والا" },
+            { id: "086", arabic: "المقسط", transliteration: "Al-Muqsit", meaningEnglish: "The Equitable", meaningUrdu: "انصاف کرنے والا" },
+            { id: "087", arabic: "الجامع", transliteration: "Al-Jami", meaningEnglish: "The Gatherer", meaningUrdu: "اکٹھا کرنے والا" },
+            { id: "088", arabic: "الغني", transliteration: "Al-Ghaniyy", meaningEnglish: "The Self-Sufficient", meaningUrdu: "غنی" },
+            { id: "089", arabic: "المغني", transliteration: "Al-Mughni", meaningEnglish: "The Enricher", meaningUrdu: "دولت مند کرنے والا" },
+            { id: "090", arabic: "المانع", transliteration: "Al-Mani", meaningEnglish: "The Withholder", meaningUrdu: "روکنے والا" },
+            { id: "091", arabic: "الضار", transliteration: "Ad-Darr", meaningEnglish: "The Distressor", meaningUrdu: "نقصان پہنچانے والا" },
+            { id: "092", arabic: "النافع", transliteration: "An-Nafi", meaningEnglish: "The Propitious", meaningUrdu: "نفع پہنچانے والا" },
+            { id: "093", arabic: "النور", transliteration: "An-Nur", meaningEnglish: "The Light", meaningUrdu: "روشن کرنے والا" },
+            { id: "094", arabic: "الهادي", transliteration: "Al-Hadi", meaningEnglish: "The Guide", meaningUrdu: "ہدایت دینے والا" },
+            { id: "095", arabic: "البديع", transliteration: "Al-Badi", meaningEnglish: "The Incomparable Originator", meaningUrdu: "انوکھا پیدا کرنے والا" },
+            { id: "096", arabic: "الباقي", transliteration: "Al-Baqi", meaningEnglish: "The Everlasting", meaningUrdu: "ہمیشہ رہنے والا" },
+            { id: "097", arabic: "الوارث", transliteration: "Al-Waris", meaningEnglish: "The Ultimate Inheritor", meaningUrdu: "وارث" },
+            { id: "098", arabic: "الرشيد", transliteration: "Ar-Rashid", meaningEnglish: "The Guide to Path", meaningUrdu: "صحیح راہ دکھانے والا" },
+            { id: "099", arabic: "الصبور", transliteration: "As-Sabur", meaningEnglish: "The Timeless", meaningUrdu: "صبر کرنے والا" }
+        ];
+
+        // Shared placeholder elements
+        const defaultImages = [
+            "https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aXNsYW1pYyUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D",
+            "https://static.vecteezy.com/system/resources/thumbnails/022/724/683/small/ramadan-mosque-islamic-lantern-free-photo.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJMtkqie70c8Eiz4aJQ9Of5Up4S3x9Lo3Zdbk4MjrHAcoN1c58z0sU80au&s=10",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQemrc4Kql9KX5Rp7V3aUzzautult3Rqz70H0YQWllN-xm5gxysXGfxc70h&s=10",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZRPfhvLiJiMcPV-plECvdsMcC1vHBa6hvVeV3JKyh9g&s=10",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXRDXXgstTmwcnztjkj08antdGwS9r92_oaLpkKg7YMh9PiZSsuzUP4Vn2&s=10",
+            "https://w0.peakpx.com/wallpaper/398/891/HD-wallpaper-beautiful-mosque-islamic-light-religi.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBx9d00N8H1345_dVE4-M_T3c3xMO69zmFGYk4PQihOA&s=10",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1FQHZVeclDumONTkVEDWsyeiIqePaVIDty41XS5Ml6-6E-NLuR9KP1h0&s=10",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy7IEtEPmUleeYv2OCLjDHbRgomnJCRiW1rbo6BkswlTk4eF8znTQyYEY&s=10",
+             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReXP5PPM0_t9HK71ZcBFT2XPj9alysBlmeYbDXKYmvIqGWhsaKI0tVDtw&s=10",
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBnfRKxL64Ib1i2ZMC3mrHKK4QDhcAOWMhj_7W-EhjcA&s=10",
+               "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuoVfHk-YdwAi_gsTh5TlfyJf1Xyp6IcVSbPX3Nqie0Q&s=10",
+                "https://i.pinimg.com/236x/04/50/42/045042366496f99e211c1febcbe61e2a.jpg",
+                   "https://i.pinimg.com/474x/22/e5/2e/22e52e43572dea60a2b609aba06e6dea.jpg",
+             "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEsNJVGY-84WVd8mprgIdCuPBnmFl-tnRHps-y3Dp3Sw&s=10",
+         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW2-NyuWcs7Y7bAQJccvcb096aFigoSUJnoo5vEug3mQ&s=10",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9e5cjWYPQk8uluTd2WNpKZx11qHI6xGC8_4KaF0_hodoGH6ttI6mfZms&s=10",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQobn1hHU8b_FdYIERLTEcHUJmvbMHKzYX70LuUEo-Uw&s=10",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnWv88HISMKFTeMW9tz-VaWU_LAjzEiTcJZoEXWQT_ciDabUIeGAFjJqia&s=10",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdIvsOOj60Nxm1ptBNt8CMIuaPzqwED2vK5suUf0MJqg55lOVU9gcwCiU&s=10",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV_iiXDMDv4nB-DoJ933ZJLGs4t9aRvEmU19iStwvK7Q&s",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY7k0w8Wg0WA7R4t7TsYZd3bbgrpmTdQg88qdSra5Reg&s=10",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPc68X3U8i9QulpABKDDXukopaQ_1QapQpn_XsmI0zNA&s=10",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSG0Wu_BmA0Vrqhpg6zoOg6g-sqEwk3s-xhtkiIWjfLtIR7A6OQZeOr7VU&s=10",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrTFJJqjW9QRKAlH2t4yHdvF1BBXZvNnWmDhde9janumkgqboIucdCiobW&s=10",
+    "https://i.pinimg.com/736x/f7/0a/56/f70a5665b30817ee8754091342b67747.jpg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq9nkrfseMrrJWJeWNemfWoEaAEeP59n9LOLn0lloPQw&s=10",             
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST36AaPUP-dFAjAEif0eSSrwoKPs-5wpChn57KEq11GQ&s=10",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE7YZJf5rA_wi_Wp-BJy5D2COMaZAeYQTWwyZCs80iPQ&s=10",     
+    "https://w0.peakpx.com/wallpaper/727/392/HD-wallpaper-mashaallah-%E2%9D%A4%EF%B8%8F-in-2022-mosque-architecture-mecca-beautiful-mosques-islamic-mosque.jpg",
+        ];
+
+        let currentActiveIndex = 0; 
+        const memorizedNames = new Set();
+        let tasbeehCount = 0;
+
+        // Views
+        const homeView = document.getElementById('home-view');
+        const detailView = document.getElementById('detail-view');
+        const tasbeehView = document.getElementById('tasbeeh-view');
+
+        // Navigation elements
+        const namesGridContainer = document.getElementById('names-grid-container');
+        const navAll = document.getElementById('link-all');
+        const navDaily = document.getElementById('link-daily');
+        const navTasbeeh = document.getElementById('link-tasbeeh');
+        const navLogo = document.getElementById('nav-logo');
+        const searchBar = document.getElementById('search-bar');
+        const themeToggleBtn = document.getElementById('theme-toggle-btn');
+
+        // Light/Dark Theme Logic
+        themeToggleBtn.addEventListener('click', () => {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            if (currentTheme === 'dark') {
+                document.documentElement.removeAttribute('data-theme');
+                themeToggleBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+            } else {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                themeToggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+            }
+        });
+
+        // Tasbeeh Counter Logic
+        const counterDisplay = document.getElementById('counter-display');
+        document.getElementById('btn-counter-count').addEventListener('click', () => {
+            tasbeehCount++;
+            counterDisplay.innerText = tasbeehCount.toString().padStart(3, '0');
+        });
+        document.getElementById('btn-counter-reset').addEventListener('click', () => {
+            tasbeehCount = 0;
+            counterDisplay.innerText = "000";
+        });
+
+        function buildHomeGrid(filteredList = asmaAlHusna) {
+            namesGridContainer.innerHTML = '';
+            
+            if (filteredList.length === 0) {
+                namesGridContainer.innerHTML = `<div style="grid-column: 1/-1; text-align: center; color: var(--text-light); padding: 3rem; font-size: 1.2rem;">No matching names found.</div>`;
+                return;
+            }
+
+            filteredList.forEach((name) => {
+                const originalIndex = asmaAlHusna.findIndex(item => item.id === name.id);
+                const bgImg = name.image || defaultImages[originalIndex % defaultImages.length];
+                
+                const card = document.createElement('div');
+                card.className = 'name-card';
+                card.onclick = () => showDetailView(originalIndex);
+                card.innerHTML = `
+                    <img src="${bgImg}" alt="${name.transliteration}" class="card-img">
+                    <div class="card-body">
+                        <div class="card-id">${name.id}</div>
+                        <div class="card-arabic">${name.arabic}</div>
+                        <div class="card-translit">${name.transliteration}</div>
+                        <div class="card-meaning">${name.meaningEnglish} / ${name.meaningUrdu}</div>
+                    </div>
+                `;
+                namesGridContainer.appendChild(card);
+            });
+        }
+
+        // Live Search Input Handler
+        searchBar.addEventListener('input', (e) => {
+            const query = e.target.value.toLowerCase().trim();
+            
+            const filtered = asmaAlHusna.filter(name => {
+                return (
+                    name.transliteration.toLowerCase().includes(query) ||
+                    name.meaningEnglish.toLowerCase().includes(query) ||
+                    (name.meaningUrdu && name.meaningUrdu.includes(query)) ||
+                    name.arabic.includes(query) ||
+                    name.id.includes(query)
+                );
+            });
+            
+            buildHomeGrid(filtered);
+        });
+
+        function showDetailView(index) {
+            currentActiveIndex = index;
+            const data = asmaAlHusna[index];
+            const bgImg = data.image || defaultImages[index % defaultImages.length];
+
+            document.getElementById('main-banner-bg').style.backgroundImage = `url('${bgImg}')`;
+            document.getElementById('det-arabic').innerText = data.arabic;
+            document.getElementById('det-translit').innerText = data.transliteration;
+            document.getElementById('det-meanings').innerText = `${data.meaningEnglish} / ${data.meaningUrdu || ''}`;
+            
+            document.getElementById('det-quran').innerText = `"${data.quran || 'Quranic reference details and contextual spiritual commentary for ' + data.transliteration}"`;
+            document.getElementById('det-quran-verse').innerText = data.verse || "Reflections";
+            document.getElementById('det-hadith').innerText = `"${data.hadith || 'Prophetic traditions and direct references highlighting the virtue of remembering this holy name.'}"`;
+            document.getElementById('det-hadith-source').innerText = data.source || "Islamic Records";
+            document.getElementById('det-ref-quote').innerText = `"${data.quote || 'True connection comes from understanding ' + data.transliteration}"`;
+            document.getElementById('det-ref-desc').innerText = data.desc || "Reflect upon this attributes daily to bring peace and barkah into your everyday routine.";
+
+            updateProgressBar();
+
+            const prevIndex = (index - 1 + asmaAlHusna.length) % asmaAlHusna.length;
+            const nextIndex = (index + 1) % asmaAlHusna.length;
+            setupNavCard('prev', prevIndex);
+            setupNavCard('next', nextIndex);
+
+            const memBtn = document.getElementById('btn-memorize');
+            if (memorizedNames.has(data.id)) {
+                memBtn.classList.add('active');
+                memBtn.querySelector('span').innerText = "Memorized!";
+            } else {
+                memBtn.classList.remove('active');
+                memBtn.querySelector('span').innerText = "Mark as Memorized";
+            }
+
+            homeView.style.display = 'none';
+            tasbeehView.style.display = 'none';
+            detailView.style.display = 'block';
+            resetNavActive();
+        }
+
+        function setupNavCard(type, targetIndex) {
+            const targetData = asmaAlHusna[targetIndex];
+            document.getElementById(`${type}-id`).innerText = targetData.id;
+            document.getElementById(`${type}-name`).innerText = targetData.transliteration;
+            document.getElementById(`${type}-mean`).innerText = targetData.meaningEnglish;
+            document.getElementById(`${type}-card`).onclick = () => showDetailView(targetIndex);
+        }
+
+        function updateProgressBar() {
+            const percentage = Math.max(1, Math.round((memorizedNames.size / 99) * 100));
+            document.getElementById('progress-fill').style.width = `${percentage}%`;
+            document.getElementById('progress-txt').innerText = `${memorizedNames.size} / 99 Names Memorized`;
+        }
+
+        function resetNavActive() {
+            navAll.classList.remove('active');
+            navDaily.classList.remove('active');
+            navTasbeeh.classList.remove('active');
+        }
+
+        // Voice Engine 
+        document.getElementById('btn-audio').addEventListener('click', () => {
+            const currentName = asmaAlHusna[currentActiveIndex].transliteration;
+            const utterance = new SpeechSynthesisUtterance(currentName);
+            utterance.lang = 'ar-SA'; 
+            window.speechSynthesis.speak(utterance);
+        });
+
+        document.getElementById('btn-memorize').addEventListener('click', function() {
+            const currentId = asmaAlHusna[currentActiveIndex].id;
+            if (memorizedNames.has(currentId)) {
+                memorizedNames.delete(currentId);
+                this.classList.remove('active');
+                this.querySelector('span').innerText = "Mark as Memorized";
+            } else {
+                memorizedNames.add(currentId);
+                this.classList.add('active');
+                this.querySelector('span').innerText = "Memorized!";
+            }
+            updateProgressBar();
+        });
+
+        navAll.addEventListener('click', () => {
+            homeView.style.display = 'block';
+            detailView.style.display = 'none';
+            tasbeehView.style.display = 'none';
+            resetNavActive();
+            navAll.classList.add('active');
+            searchBar.value = ''; 
+            buildHomeGrid();
+        });
+
+        navLogo.addEventListener('click', () => {
+            homeView.style.display = 'block';
+            detailView.style.display = 'none';
+            tasbeehView.style.display = 'none';
+            resetNavActive();
+            navAll.classList.add('active');
+            searchBar.value = '';
+            buildHomeGrid();
+        });
+
+        navDaily.addEventListener('click', () => {
+            showDetailView(0); 
+            resetNavActive();
+            navDaily.classList.add('active');
+        });
+
+        navTasbeeh.addEventListener('click', () => {
+            homeView.style.display = 'none';
+            detailView.style.display = 'none';
+            tasbeehView.style.display = 'block';
+            resetNavActive();
+            navTasbeeh.classList.add('active');
+        });
+
+        buildHomeGrid();
+    </script>
+</body>
+</html>
